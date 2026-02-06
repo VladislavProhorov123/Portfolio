@@ -18,9 +18,22 @@ export default function TypingText() {
   }, [index])
 
   return (
-    <h2 className="text-2xl font-medium text-white">
+    <h2 className="text-[clamp(1.25rem,3vw,1.75rem)]
+    font-semibold
+    tracking-wide
+    text-violet-400
+    drop-shadow-[0_0_12px_rgba(139,92,246,0.35)]
+">
       {value}
-      <span className="ml-1 inline-block w-[2px] h-[1.2em] bg-white animate-blink align-middle" />
+      <span className="ml-1
+      inline-block
+      w-[2px]
+      h-[1.2em]
+      align-middle
+      bg-violet-400
+      shadow-[0_0_8px_rgba(139,92,246,0.8)]
+      animate-blink
+" />
     </h2>
   )
 }
