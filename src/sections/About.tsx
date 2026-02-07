@@ -2,19 +2,25 @@ import React from "react";
 
 export default function About() {
   const skills = [
-    { name: "React", color: "text-cyan-400" },
-    { name: "TypeScript", color: "text-blue-400" },
-    { name: "Tailwind CSS", color: "text-teal-300" },
-    { name: "Framer Motion", color: "text-purple-400" },
-    { name: "JavaScript", color: "text-yellow-400" },
-    { name: "Git & GitHub", color: "text-gray-400" },
+    { name: "React", color: "text-white" },
+    { name: "TypeScript", color: "text-white" },
+    { name: "Tailwind CSS", color: "text-white" },
+    { name: "Framer Motion", color: "text-white" },
+    { name: "JavaScript", color: "text-white" },
+    { name: "Git & GitHub", color: "text-white" },
   ];
 
   return (
     <section className="relative bg-gray-950 py-20 px-6">
       <div className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Левая колонка — описание */}
-        <div>
+        <div
+          className="bg-gray-900/70
+  border border-white/10
+  rounded-2xl
+  p-8
+  backdrop-blur"
+        >
           <h2 className="text-3xl font-bold text-white mb-6">About Me</h2>
           <p className="text-gray-400 mb-4">
             Привет! Я Владислав, frontend-разработчик, специализируюсь на React
@@ -29,15 +35,24 @@ export default function About() {
         </div>
 
         {/* Правая колонка — стек технологий */}
-        <div className="flex flex-wrap gap-4">
+        <div
+          className=" gap-4 bg-gray-900/70
+  border border-white/10
+  rounded-2xl
+  p-8
+  backdrop-blur"
+        >
+          <h2 className="text-3xl font-bold text-white mb-6">Tech Stack</h2>
+          <div className="flex flex-wrap gap-3">
           {skills.map((skill) => (
-            <span
-              key={skill.name}
-              className={`px-4 py-2 rounded-full border border-gray-700 text-sm font-medium ${skill.color} hover:bg-gray-800 transition`}
-            >
-              {skill.name}
-            </span>
+              <span
+                key={skill.name}
+                className={`px-4 py-2 rounded-lg text-sm font-medium border border-white/10 bg-gray-800/60 text-gray-300 transition-all duration-200 hover:bg-violet-600/20 hover:border-violet-400/40 hover:text-violet-300`}
+              >
+                {skill.name}
+              </span>
           ))}
+          </div>
         </div>
       </div>
     </section>
