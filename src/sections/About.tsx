@@ -28,24 +28,61 @@ export default function About() {
     <section className="relative bg-gray-950 py-20 px-6">
       <div className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Левая колонка — описание */}
-        <div
-          className="bg-gray-900/70
-  border border-white/10
-  rounded-2xl
-  p-8
-  backdrop-blur"
-        >
-          <h2 className="text-3xl font-bold text-white mb-6">About Me</h2>
-          <p className="text-gray-400 mb-4">
-            Привет! Я Владислав, frontend-разработчик, специализируюсь на React
-            и TypeScript. Создаю производительные и удобные интерфейсы с
-            плавными анимациями и чистым кодом.
-          </p>
+        <div className="bg-gray-900/70 border border-white/10 rounded-2xl p-8 backdrop-blur flex flex-col gap-6">
+          <h2 className="text-3xl font-bold text-white mb-4">About Me</h2>
+
+          {/* Биография */}
           <p className="text-gray-400">
-            Мне нравится изучать новые технологии и применять их в реальных
-            проектах. Люблю аккуратный UI, анимации и хорошие пользовательские
-            интерфейсы.
+            Привет! Я Владислав, frontend-разработчик. Сейчас работаю над
+            управлением состоянием и сохранением данных с помощью{" "}
+            <span className="text-violet-400 font-semibold">Zustand</span>,
+            взаимодействую с внешними API, создаю анимации и UI-эффекты с{" "}
+            <span className="text-violet-400 font-semibold">Framer Motion</span>
+            , а также улучшаю пользовательский интерфейс и взаимодействие с
+            приложением. Это помогает создавать более динамичные, отзывчивые и
+            удобные веб-приложения.
           </p>
+
+          {/* Достижения */}
+          <div className="flex flex-col gap-4">
+            <h3 className="text-xl font-semibold text-violet-400">
+              Достижения / Проекты
+            </h3>
+
+            {/* Проект 1 */}
+            <div className="bg-gray-800/60 border border-white/10 rounded-lg p-4">
+              <h4 className="font-semibold text-white">
+                Дашборд-приложение на React (SPA)
+              </h4>
+              <ul className="list-disc list-inside text-gray-400 mt-2 space-y-1">
+                <li>
+                  Форма с валидацией и проверкой пароля с помощью React Hook
+                  Form
+                </li>
+                <li>
+                  Графики продаж: линейные, круговые и точечные диаграммы с
+                  Recharts
+                </li>
+                <li>Таблица с фильтрацией данных</li>
+                <li>
+                  Карточки товаров с добавлением в избранное через Context API
+                </li>
+                <li>Интерактивные интерфейсы с Swiper.js</li>
+              </ul>
+            </div>
+
+            {/* Проект 2 */}
+            <div className="bg-gray-800/60 border border-white/10 rounded-lg p-4">
+              <h4 className="font-semibold text-white">
+                Country API приложение
+              </h4>
+              <ul className="list-disc list-inside text-gray-400 mt-2 space-y-1">
+                <li>Изучение стран с использованием внешнего API</li>
+                <li>Добавление стран в избранное</li>
+                <li>Отображение полной информации о каждой стране</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         {/* Правая колонка — стек технологий */}
@@ -89,6 +126,8 @@ export default function About() {
               </div>
             ))}
           </div>
+
+          
         </div>
       </div>
     </section>
