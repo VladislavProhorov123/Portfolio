@@ -1,12 +1,12 @@
 import React from "react";
 import confetti from 'canvas-confetti'
-import { LucideMessageSquareText, MessageSquare } from "lucide-react";
+import { LucideMessageSquareText } from "lucide-react";
 
 
 export default function Contact() {
   const fireConfetti = () => {
     confetti({
-      particleCount: 180,
+      particleCount: 200,
       spread: 100,
       startVelocity: 45,
       ticks: 200,
@@ -20,7 +20,8 @@ export default function Contact() {
       ]
     })
 
-    window.open('https://t.me/VIadik0509', '_blank')
+    navigator.clipboard.writeText("yourmail@example.com");
+    alert("Email скопирован!");
   }
   return (
     <section className="bg-gray-950 py-20 px-6 text-white">

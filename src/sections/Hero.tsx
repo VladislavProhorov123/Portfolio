@@ -25,7 +25,7 @@ export default function Hero() {
     }
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-gray-950">
+    <section id="hero" className="relative min-h-screen overflow-hidden bg-gray-950">
       {/* Звёздочки на заднем фоне */}
       <Stars />
 
