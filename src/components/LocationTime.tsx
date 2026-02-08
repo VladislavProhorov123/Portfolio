@@ -1,5 +1,5 @@
 import {  MapPin } from 'lucide-react'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function LocationTime() {
   const [time, setTime] = useState<string>('')

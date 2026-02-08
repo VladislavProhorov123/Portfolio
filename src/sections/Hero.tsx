@@ -1,5 +1,4 @@
 import { motion } from "motion/react";
-import React from "react";
 import TypingText from "../components/TypingText";
 import LocationTime from "../components/LocationTime";
 import Stars from "../components/Stars";

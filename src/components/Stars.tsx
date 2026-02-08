@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Stars() {
   const stars = Array.from({ length: 100 });
   return (

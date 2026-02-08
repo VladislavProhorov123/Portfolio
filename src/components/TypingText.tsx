@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const TEXT = "I am a Frontend Developer"
 const SPEED = 100

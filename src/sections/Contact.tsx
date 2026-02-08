@@ -1,5 +1,4 @@
-import React from "react";
-import confetti from 'canvas-confetti'
+import confetti from 'canvas-confetti';
 import { LucideMessageSquareText } from "lucide-react";
 
 

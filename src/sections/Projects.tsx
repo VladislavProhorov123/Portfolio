@@ -1,4 +1,3 @@
-import React from 'react'
 import ProjectCard from '../components/ProjectCard'
 import { BottleWine, Code2, Earth, LineChartIcon,  } from 'lucide-react';
 

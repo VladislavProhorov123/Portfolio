@@ -1,5 +1,4 @@
 import { Github, Home, Linkedin, Mail, Send } from "lucide-react";
-import React from "react";
 
 export default function SocialBar() {
   const scrollToHero = () => {
