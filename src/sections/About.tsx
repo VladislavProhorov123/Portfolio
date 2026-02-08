@@ -1,13 +1,27 @@
 import React from "react";
 
 export default function About() {
-  const skills = [
-    { name: "React", color: "text-white" },
-    { name: "TypeScript", color: "text-white" },
-    { name: "Tailwind CSS", color: "text-white" },
-    { name: "Framer Motion", color: "text-white" },
-    { name: "JavaScript", color: "text-white" },
-    { name: "Git & GitHub", color: "text-white" },
+  const techStack = [
+    {
+      title: "Core",
+      items: ["HTML", "CSS", "JavaScript", "TypeScript"],
+    },
+    {
+      title: "Frontend",
+      items: ["React", "React Router", "Tailwind CSS", "Framer Motion"],
+    },
+    {
+      title: "State & Forms",
+      items: ["Zustand", "React Hook Form"],
+    },
+    {
+      title: "Data & UI",
+      items: ["Recharts", "Swiper.js", "Canvas-Confetti"],
+    },
+    {
+      title: "Tooling",
+      items: ["Vite", "Git", "GitHub", "Figma"],
+    },
   ];
 
   return (
@@ -43,15 +57,37 @@ export default function About() {
   backdrop-blur"
         >
           <h2 className="text-3xl font-bold text-white mb-6">Tech Stack</h2>
-          <div className="flex flex-wrap gap-3">
-          {skills.map((skill) => (
-              <span
-                key={skill.name}
-                className={`px-4 py-2 rounded-lg text-sm font-medium border border-white/10 bg-gray-800/60 text-gray-300 transition-all duration-200 hover:bg-violet-600/20 hover:border-violet-400/40 hover:text-violet-300`}
-              >
-                {skill.name}
-              </span>
-          ))}
+          <div className="space-y-6">
+            {techStack.map((group) => (
+              <div className="" key={group.title}>
+                <h3 className="text-sm font-semibold text-violet-400 mb-3 tracking-wide uppercase">
+                  {group.title}
+                </h3>
+
+                <div className="flex flex-wrap gap-3">
+                  {group.items.map((item) => (
+                    <span
+                      key={item}
+                      className="px-4 py-2
+                        rounded-lg
+                        text-sm font-medium
+
+                        bg-gray-800/60
+                        border border-white/10
+                        text-gray-300
+
+                        transition-all duration-200
+                        hover:text-violet-300
+                        hover:border-violet-400/40
+                        hover:bg-violet-600/10
+                        hover:shadow-[0_0_20px_rgba(139,92,246,0.25)]"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
