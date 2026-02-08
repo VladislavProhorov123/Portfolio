@@ -19,7 +19,7 @@ export default function Contact() {
       ]
     })
 
-    navigator.clipboard.writeText("yourmail@example.com");
+    navigator.clipboard.writeText("vladprohorov1005009@gmail.com");
     alert("Email скопирован!");
   }
   return (
