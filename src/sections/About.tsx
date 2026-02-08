@@ -28,7 +28,7 @@ export default function About() {
     <section className="relative bg-gray-950 py-20 px-6">
       <div className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Левая колонка — описание */}
-        <div className="bg-gray-900/70 border border-white/10 rounded-2xl p-8 backdrop-blur flex flex-col gap-6">
+        <div className="bg-gray-900/70 border border-white/10 rounded-2xl p-4 sm:p-6 lg:p-8 backdrop-blur flex flex-col gap-6">
           <h2 className="text-3xl font-bold text-white mb-4">About Me</h2>
 
           {/* Биография */}
@@ -90,7 +90,7 @@ export default function About() {
           className=" gap-4 bg-gray-900/70
   border border-white/10
   rounded-2xl
-  p-8
+  p-4 sm:p-6 lg:p-8
   backdrop-blur"
         >
           <h2 className="text-3xl font-bold text-white mb-6">Tech Stack</h2>
@@ -126,8 +126,6 @@ export default function About() {
               </div>
             ))}
           </div>
-
-          
         </div>
       </div>
     </section>

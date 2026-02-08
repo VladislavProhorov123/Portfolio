@@ -1,35 +1,39 @@
 import React from 'react'
 import ProjectCard from '../components/ProjectCard'
-import { Github, Home, Send } from 'lucide-react';
+import { BottleWine, Code2, Earth, LineChartIcon,  } from 'lucide-react';
 
 const projects = [
     {
-      Icon: Github,
+      Icon: LineChartIcon,
       title: "Dashboard App",
       description:
-        "SPA на React с графиками продаж, формой с валидацией, таблицами и Swiper.js",
-      techStack: ["React", "TypeScript", "Recharts", "Swiper.js", "React Hook Form"],
+        "Разработана панель управления продажами с регистрацией и проверкой пароля, возможностью фильтровать продажи, добавлять товары в избранное и визуализировать данные через разные графики.",
+      techStack: ["React", "Recharts", "Swiper.js", "React Hook Form"],
+      link: "https://github.com/VladislavProhorov123/React-Dashboard"
     },
     {
-      Icon: Home,
+      Icon: BottleWine,
       title: "Perfume Website",
       description:
-        "Сайт духов с нуля, адаптивный, с формой заявки через Sheetbest, 4 страницы",
-      techStack: ["React", "Vite", "Tailwind CSS", "Sheetbest"],
+        "Создан сайт духов с формой для заказов, где данные пользователей автоматически попадают в Excel, реализован роутинг по 4 страницам, добавлены свайперы и фильтрация товаров для удобного выбора.",
+      techStack: ["React", "React Router", "Tailwind CSS", "Sheetbest", "Swiper.js"],
+      link: "https://github.com/VladislavProhorov123/Bbenvenuti"
     },
     {
-      Icon: Send,
+      Icon: Earth,
       title: "Country API App",
       description:
-        "Приложение для изучения стран, добавление в избранное и работа с API",
+        "Реализовано приложение для изучения стран с API, включая стартовую страницу, страницу всех стран с фильтрацией, модальные окна и детальную страницу для каждой страны с добавлением в избранное.",
       techStack: ["React", "TypeScript", "API", "Zustand", "Tailwind CSS"],
+      link: "https://github.com/VladislavProhorov123/Country-api"
     },
     {
-      Icon: Send,
-      title: "Country API App",
+      Icon: Code2,
+      title: "CodeFlow",
       description:
-        "Приложение для изучения стран, добавление в избранное и работа с API",
-      techStack: ["React", "TypeScript", "API", "Zustand", "Tailwind CSS"],
+        "Создан адаптивный одностраничный лейдинг с 6 секциями и отображением блоков кода через библиотеку react-syntax-highlighter для демонстрации примеров.",
+      techStack: ["React", "React-syntax-highlighter", "Tailwind CSS"],
+      link: "https://github.com/VladislavProhorov123/React-CodeFlow"
     },
   ];
 
@@ -47,6 +51,7 @@ export default function Projects() {
             title={projects.title}
             description={projects.description}
             techStack={projects.techStack}
+            link={projects.link}
             />
           ))}
         </div>
