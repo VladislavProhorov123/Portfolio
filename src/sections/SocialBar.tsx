@@ -7,7 +7,7 @@ export default function SocialBar() {
   };
 
   const copyEmail = () => {
-    navigator.clipboard.writeText("yourmail@example.com");
+    navigator.clipboard.writeText("vladprohorov100509@gmail.com");
     alert("Email скопирован!");
   };
 
