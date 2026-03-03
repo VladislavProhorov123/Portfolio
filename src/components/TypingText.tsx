@@ -7,9 +7,9 @@ export default function TypingText() {
   const [value, setValue] = useState('')
   const [index, setIndex] = useState(0)
 
-  const { t } = useTranslation('typingText')
+  const { t } = useTranslation()
 
-  const TEXT = {t("text")}
+  const TEXT = t("text")
   
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function TypingText() {
       setIndex((prev) => prev + 1)
     }, SPEED)
     return () => clearTimeout(timeout)
-  }, [index])
+  }, [index, TEXT])
 
   return (
     <h2 className="text-[clamp(1.25rem,3vw,1.75rem)]
