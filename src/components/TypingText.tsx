@@ -1,11 +1,16 @@
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
-const TEXT = "I am a Frontend Developer"
 const SPEED = 100
 
 export default function TypingText() {
   const [value, setValue] = useState('')
   const [index, setIndex] = useState(0)
+
+  const { t } = useTranslation('typingText')
+
+  const TEXT = {t("text")}
+  
 
   useEffect(() => {
     if(index >= TEXT.length) return
