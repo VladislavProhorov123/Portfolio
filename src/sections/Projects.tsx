@@ -8,7 +8,7 @@ export default function Projects() {
   const { t } = useTranslation()
 
   // получаем массив объектов проектов из JSON
-  const translatedProjects = t('projects', { returnObjects: true }) 
+  const translatedProjects = t('projects', { returnObjects: true })  as any[]
 
   return (
     <section className='text-white px-6 bg-gray-950'>

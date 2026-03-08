@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const [activeTech, setActiveTech] = useState<string | null>(null);
   const { t } = useTranslation();
 
   const techStack = [
@@ -46,9 +48,9 @@ export default function About() {
             <div className="bg-gray-800/60 border border-white/10 rounded-lg p-4">
               <h4 className="font-semibold text-white">{t("project1Title")}</h4>
               <ul className="list-disc list-inside text-gray-400 mt-2 space-y-1">
-                {t("project1Items", { returnObjects: true }).map(
-                  (item: string) => (
-                    <li key={item}>{item}</li>
+                {(t("project1Items", { returnObjects: true }) as string[]).map(
+                  (item, i) => (
+                    <li key={i}>{item}</li>
                   ),
                 )}
               </ul>
@@ -58,9 +60,9 @@ export default function About() {
             <div className="bg-gray-800/60 border border-white/10 rounded-lg p-4">
               <h4 className="font-semibold text-white">{t("project2Title")}</h4>
               <ul className="list-disc list-inside text-gray-400 mt-2 space-y-1">
-                {t("project2Items", { returnObjects: true }).map(
-                  (item: string) => (
-                    <li key={item}>{item}</li>
+                {(t("project2Items", { returnObjects: true }) as string[]).map(
+                  (item, i) => (
+                    <li key={i}>{item}</li>
                   ),
                 )}
               </ul>
@@ -76,7 +78,9 @@ export default function About() {
   p-4 sm:p-6 lg:p-8
   backdrop-blur"
         >
-          <h2 className="text-3xl font-bold text-white mb-6">{t("techStackTitle")}</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">
+            {t("techStackTitle")}
+          </h2>
           <div className="space-y-6">
             {techStack.map((group) => (
               <div className="" key={group.title}>
@@ -85,26 +89,19 @@ export default function About() {
                 </h3>
 
                 <div className="flex flex-wrap gap-3">
-                  {group.items.map((item) => (
-                    <span
-                      key={item}
-                      className="px-4 py-2
-                        rounded-lg
-                        text-sm font-medium
+                  {group.items.map((item) => {
+                    const isActive = activeTech === item;
 
-                        bg-gray-800/60
-                        border border-white/10
-                        text-gray-300
-
-                        transition-all duration-200
-                        hover:text-violet-300
-                        hover:border-violet-400/40
-                        hover:bg-violet-600/10
-                        hover:shadow-[0_0_20px_rgba(139,92,246,0.25)]"
-                    >
-                      {item}
-                    </span>
-                  ))}
+                    return (
+                      <span
+                        key={item}
+                        onClick={() => setActiveTech(isActive ? null : item)}
+                        className={`px-4 py-2 rounded-lg text-sm font-medium border transition-all duration-200 cursor-pointer ${isActive ? "text-violet-300 border-violet-400/40 bg-violet-600/10 shadow-[0_0_20px_rgba(139,92,246,0.25)]" : "bg-gray-800/60 border-white/10 text-gray-300 hover:text-violet-300 hover:border-violet-400/40 hover:bg-violet-600/10 hover:shadow-[0_0_20px_rgba(139,92,246,0.25)]"}`}
+                      >
+                        {item}
+                      </span>
+                    );
+                  })}
                 </div>
               </div>
             ))}

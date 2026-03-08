@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import i18n from "i18next";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import ua from "../assets/ua.svg";
 import usa from "../assets/usa.svg";
