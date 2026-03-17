@@ -30,10 +30,16 @@
   "title": "Selected Work",
   "projects": [
     {
-      "title": "Dashboard App",
-      "description": "A sales dashboard was developed with registration and password validation, the ability to filter sales, add products to favorites, and visualize data through various charts.",
-      "techStack": ["React", "Recharts", "Swiper.js", "React Hook Form"],
-      "link": "https://github.com/VladislavProhorov123/React-Dashboard"
+      "title": "Bouton Akkermar",
+      "description": "Implemented 4 pages. Added catalog filtering, separate product pages (bouquets, gifts), and a payment modal. Data is stored in Supabase, and the catalog is rendered from the database. A contact form is included.",
+      "techStack": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "React Router",
+        "React Hook Form"
+      ],
+      "link": "https://github.com/VladislavProhorov123/Bouton-Akkerman"
     },
     {
       "title": "Perfume Website",
@@ -53,11 +59,12 @@
       "techStack": ["React", "TypeScript", "API", "Zustand", "Tailwind CSS"],
       "link": "https://github.com/VladislavProhorov123/Country-api"
     },
+
     {
-      "title": "CodeFlow",
-      "description": "Created a responsive one-page landing with 6 sections and code blocks displayed using react-syntax-highlighter to demonstrate examples.",
-      "techStack": ["React", "React-syntax-highlighter", "Tailwind CSS"],
-      "link": "https://github.com/VladislavProhorov123/React-CodeFlow"
+      "title": "Dashboard App",
+      "description": "A sales dashboard was developed with registration and password validation, the ability to filter sales, add products to favorites, and visualize data through various charts.",
+      "techStack": ["React", "Recharts", "Swiper.js", "React Hook Form"],
+      "link": "https://github.com/VladislavProhorov123/React-Dashboard"
     }
   ],
   "contact": {

@@ -30,10 +30,16 @@
   "title": "Вибране",
   "projects": [
     {
-      "title": "Дашборд-застосунок",
-      "description": "Розроблена панель керування продажами з реєстрацією та перевіркою пароля, можливістю фільтрувати продажі, додавати товари в обране та візуалізувати дані через різні графіки.",
-      "techStack": ["React", "Recharts", "Swiper.js", "React Hook Form"],
-      "link": "https://github.com/VladislavProhorov123/React-Dashboard"
+      "title": "Bouton Akkermar",
+      "description": "Реалізовано 4 сторінки сайту. Є фільтрація каталогу, окремі сторінки товарів (букети, подарунки) та модальне вікно для оплати. Дані зберігаються в Supabase, каталог рендериться з бази. Додано форму зворотного зв’язку.",
+      "techStack": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "React Router",
+        "React Hook Form"
+      ],
+      "link": "https://github.com/VladislavProhorov123/Bouton-Akkerman"
     },
     {
       "title": "Сайт памфумів",
@@ -54,10 +60,10 @@
       "link": "https://github.com/VladislavProhorov123/Country-api"
     },
     {
-      "title": "CodeFlow",
-      "description": "Створено адаптивний односторінковий лендінг з 6 секціями та відображенням блоків коду через react-syntax-highlighter для демонстрації прикладів.",
-      "techStack": ["React", "React-syntax-highlighter", "Tailwind CSS"],
-      "link": "https://github.com/VladislavProhorov123/React-CodeFlow"
+      "title": "Дашборд-застосунок",
+      "description": "Розроблена панель керування продажами з реєстрацією та перевіркою пароля, можливістю фільтрувати продажі, додавати товари в обране та візуалізувати дані через різні графіки.",
+      "techStack": ["React", "Recharts", "Swiper.js", "React Hook Form"],
+      "link": "https://github.com/VladislavProhorov123/React-Dashboard"
     }
   ],
   "contact": {
