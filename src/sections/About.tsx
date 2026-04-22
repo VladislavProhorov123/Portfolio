@@ -1,3 +1,4 @@
+import { ExternalLink, Github } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -9,9 +10,19 @@ export default function About() {
     { title: t("core"), items: ["HTML", "CSS", "JavaScript", "TypeScript"] },
     {
       title: t("frontend"),
-      items: ["React", "React Router", "Tailwind CSS", "Framer Motion"],
+      items: [
+        "React",
+        "React Router",
+        "Tailwind CSS",
+        "Framer Motion",
+        "React Query",
+      ],
     },
-    { title: t("stateForms"), items: ["Zustand", "React Hook Form"] },
+    {
+      title: t("backend"),
+      items: ["Node.js", "Express.js", "REST API", "JWT", "bcrypt"],
+    },
+    { title: t("stateForms"), items: ["Zustand", "React Hook Form", "Zod"] },
     { title: t("dataUi"), items: ["Recharts", "Swiper.js", "Canvas-Confetti"] },
     { title: t("tooling"), items: ["Vite", "Git", "GitHub", "Figma"] },
   ];
@@ -54,18 +65,27 @@ export default function About() {
                   ),
                 )}
               </ul>
-            </div>
+              <div className="flex flex-col sm:flex-row gap-3 mt-4">
+                <a
+                  href="https://github.com/VladislavProhorov123/MovieApp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border transition-all duration-200 cursor-pointer bg-gray-800/60 border-white/10 text-gray-300 hover:text-violet-300 hover:border-violet-400/40 hover:bg-violet-600/10 hover:shadow-[0_0_20px_rgba(139,92,246,0.25)] w-full sm:w-auto hover:-translate-y-[1px] active:scale-95"
+                >
+                  <Github size={18} />
+                  <span className="text-sm">GiHub</span>
+                </a>
 
-            {/* Проект 2 */}
-            <div className="bg-gray-800/60 border border-white/10 rounded-lg p-4">
-              <h4 className="font-semibold text-white">{t("project2Title")}</h4>
-              <ul className="list-disc list-inside text-gray-400 mt-2 space-y-1">
-                {(t("project2Items", { returnObjects: true }) as string[]).map(
-                  (item, i) => (
-                    <li key={i}>{item}</li>
-                  ),
-                )}
-              </ul>
+                <a
+                  href="https://movie-app-silk-xi-40.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border transition-all duration-200 cursor-pointer bg-gray-800/60 border-white/10 text-gray-300 hover:text-violet-300 hover:border-violet-400/40 hover:bg-violet-600/10 hover:shadow-[0_0_20px_rgba(139,92,246,0.25)] w-full sm:w-auto hover:-translate-y-[1px] active:scale-95"
+                >
+                  <ExternalLink size={18} />
+                  <span className="text-sm">Live Demo</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

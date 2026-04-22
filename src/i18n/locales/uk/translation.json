@@ -9,21 +9,20 @@
   "achievementsTitle": "Досягнення / Проекти",
   "project1Title": "Дашборд-застосунок на React (SPA)",
   "project1Items": [
-    "Форма з валідацією та перевіркою пароля за допомогою React Hook Form",
-    "Графіки продажів: лінійні, кругові та точкові діаграми з Recharts",
-    "Таблиця з фільтруванням даних",
-    "Картки товарів з додаванням у обране через Context API",
-    "Інтерактивні інтерфейси з Swiper.js"
-  ],
-  "project2Title": "Country API застосунок",
-  "project2Items": [
-    "Вивчення країн за допомогою зовнішнього API",
-    "Додавання країн у обране",
-    "Відображення повної інформації про кожну країну"
+    "Багатосторінковий додаток (Home, Movies, Actors, Details)",
+    "Пошук фільмів з debounce та історією",
+    "Фільтрація (жанр, рік, сортування)",
+    "Секція Trending",
+    "Пагінація",
+    "Детальні сторінки фільмів та акторів (каст, схожі, рекомендації, трейлер)",
+    "Система обраного (Zustand)",
+    "Глобальний стан через Zustand",
+    "Робота з TMDB API"
   ],
   "techStackTitle": "Стек технологій",
   "core": "Core",
   "frontend": "Frontend",
+  "backend": "Backend",
   "stateForms": "State & Forms",
   "dataUi": "Data & UI",
   "tooling": "Tooling",
@@ -39,7 +38,7 @@
         "React Router",
         "React Hook Form"
       ],
-      "link": "https://github.com/VladislavProhorov123/Bouton-Akkerman"
+      "link": "https://bouton-akkerman.vercel.app/"
     },
     {
       "title": "Сайт памфумів",
@@ -51,20 +50,15 @@
         "Sheetbest",
         "Swiper.js"
       ],
-      "link": "https://github.com/VladislavProhorov123/Bbenvenuti"
+      "link": "https://bbenvenuti.vercel.app/"
     },
     {
-      "title": "Country API застосунок",
-      "description": "Реалізовано застосунок для вивчення країн через API, включаючи стартову сторінку, сторінку всіх країн з фільтруванням, модальні вікна та детальну сторінку для кожної країни з додаванням у обране.",
-      "techStack": ["React", "TypeScript", "API", "Zustand", "Tailwind CSS"],
-      "link": "https://github.com/VladislavProhorov123/Country-api"
-    },
-    {
-      "title": "Дашборд-застосунок",
-      "description": "Розроблена панель керування продажами з реєстрацією та перевіркою пароля, можливістю фільтрувати продажі, додавати товари в обране та візуалізувати дані через різні графіки.",
-      "techStack": ["React", "Recharts", "Swiper.js", "React Hook Form"],
-      "link": "https://github.com/VladislavProhorov123/React-Dashboard"
+      "title": "Movie App",
+      "description": "Реалізовано додаток для перегляду фільмів через API, що включає лендинг-сторінку, сторінку з усіма фільмами з фільтрацією та пошуком, модальні вікна для швидкого перегляду та детальну сторінку кожного фільму з функціоналом обраного.",
+      "techStack": ["React", "JavaScript", "TMDB API", "Zustand", "Tailwind CSS", "React Router"],
+      "link": "https://movie-app-silk-xi-40.vercel.app/"
     }
+
   ],
   "contact": {
     "title": "Готовий створювати щось круте?",

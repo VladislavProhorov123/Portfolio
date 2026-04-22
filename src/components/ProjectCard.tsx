@@ -15,7 +15,7 @@ export default function ProjectCard({
 }: IProjectCardProps) {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer" className="block">
-      <div className="bg-gray-900/70 border border-white/10 rounded-2xl p-4 lg:p-6 flex flex-col justify-between backdrop-blur transition hover:shadow-[0_0_40px_rgba(139,92,246,0.25)] hover:scale-104">
+      <div className="h-full bg-gray-900/70 border border-white/10 rounded-2xl p-4 lg:p-6 flex flex-col backdrop-blur transition hover:shadow-[0_0_40px_rgba(139,92,246,0.25)] hover:scale-105">
         <div className="flex items-center gap-3 mb-4">
           <Icon className="w-6 h-6 text-violet-400" />
           <h3 className="text-xl font-semibold text-white">{title}</h3>

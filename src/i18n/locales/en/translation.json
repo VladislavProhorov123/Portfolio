@@ -7,23 +7,22 @@
   "aboutMeTitle": "About Me",
   "bio": "Hi! I'm Vladislav, a frontend developer. I work with state management and data persistence using {{zustand}}, interact with external APIs, create animations and UI effects with {{framer}}, and improve user interfaces and app interactions. This helps to build more dynamic, responsive, and user-friendly web applications.",
   "achievementsTitle": "Achievements / Projects",
-  "project1Title": "React Dashboard App (SPA)",
+  "project1Title": "MovieApp",
   "project1Items": [
-    "Form with validation and password check using React Hook Form",
-    "Sales charts: line, pie, and scatter charts with Recharts",
-    "Data table with filtering",
-    "Product cards with favorites using Context API",
-    "Interactive interfaces with Swiper.js"
-  ],
-  "project2Title": "Country API App",
-  "project2Items": [
-    "Learning countries using external API",
-    "Adding countries to favorites",
-    "Displaying full information about each country"
+    "Multi-page app (Home, Movies, Actors, Details pages)",
+    "Movie search with debounce and history",
+    "Filtering (genre, year, sorting)",
+    "Trending movies section",
+    "Pagination system",
+    "Movie & actor detail pages (cast, similar, recommendations, trailer)",
+    "Favorites system with Zustand",
+    "Global state management with Zustand",
+    "Data fetching from TMDB API"
   ],
   "techStackTitle": "Tech Stack",
   "core": "Core",
   "frontend": "Frontend",
+  "backend": "Backend",
   "stateForms": "State & Forms",
   "dataUi": "Data & UI",
   "tooling": "Tooling",
@@ -39,7 +38,7 @@
         "React Router",
         "React Hook Form"
       ],
-      "link": "https://github.com/VladislavProhorov123/Bouton-Akkerman"
+      "link": "https://bouton-akkerman.vercel.app/"
     },
     {
       "title": "Perfume Website",
@@ -51,21 +50,16 @@
         "Sheetbest",
         "Swiper.js"
       ],
-      "link": "https://github.com/VladislavProhorov123/Bbenvenuti"
+      "link": "https://bbenvenuti.vercel.app/"
     },
     {
-      "title": "Country API App",
-      "description": "Implemented an app to explore countries using an API, including a landing page, all countries page with filtering, modals, and a detailed page for each country with favorites functionality.",
-      "techStack": ["React", "TypeScript", "API", "Zustand", "Tailwind CSS"],
-      "link": "https://github.com/VladislavProhorov123/Country-api"
-    },
-
-    {
-      "title": "Dashboard App",
-      "description": "A sales dashboard was developed with registration and password validation, the ability to filter sales, add products to favorites, and visualize data through various charts.",
-      "techStack": ["React", "Recharts", "Swiper.js", "React Hook Form"],
-      "link": "https://github.com/VladislavProhorov123/React-Dashboard"
+      "title": "Movie App",
+      "description": "Implemented a movie app using an API, including a landing page, a page with all movies with filtering and search, modals for quick view, and a detailed page for each movie with favorites functionality.",
+      "techStack": ["React", "JavaScript", "TMDB API", "Zustand", "Tailwind CSS", "React Router"],
+      "link": "https://movie-app-silk-xi-40.vercel.app/"
     }
+
+
   ],
   "contact": {
     "title": "Ready to build something great?",
