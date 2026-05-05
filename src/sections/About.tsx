@@ -77,7 +77,7 @@ export default function About() {
                 </a>
 
                 <a
-                  href="https://movie-app-silk-xi-40.vercel.app/"
+                  href="https://movie-app-one-alpha-11.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border transition-all duration-200 cursor-pointer bg-gray-800/60 border-white/10 text-gray-300 hover:text-violet-300 hover:border-violet-400/40 hover:bg-violet-600/10 hover:shadow-[0_0_20px_rgba(139,92,246,0.25)] w-full sm:w-auto hover:-translate-y-[1px] active:scale-95"

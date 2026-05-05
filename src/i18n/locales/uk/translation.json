@@ -55,8 +55,8 @@
     {
       "title": "Movie App",
       "description": "Реалізовано додаток для перегляду фільмів через API, що включає лендинг-сторінку, сторінку з усіма фільмами з фільтрацією та пошуком, модальні вікна для швидкого перегляду та детальну сторінку кожного фільму з функціоналом обраного.",
-      "techStack": ["React", "JavaScript", "TMDB API", "Zustand", "Tailwind CSS", "React Router"],
-      "link": "https://movie-app-silk-xi-40.vercel.app/"
+      "techStack": ["React", "JavaScript", "TMDB API", "Zustand", "Tailwind CSS", "React Router", "Express.js", "JWT", "ReCAPTCHA"],
+      "link": "https://movie-app-one-alpha-11.vercel.app/"
     }
 
   ],

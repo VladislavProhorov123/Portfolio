@@ -55,8 +55,8 @@
     {
       "title": "Movie App",
       "description": "Implemented a movie app using an API, including a landing page, a page with all movies with filtering and search, modals for quick view, and a detailed page for each movie with favorites functionality.",
-      "techStack": ["React", "JavaScript", "TMDB API", "Zustand", "Tailwind CSS", "React Router"],
-      "link": "https://movie-app-silk-xi-40.vercel.app/"
+      "techStack": ["React", "JavaScript", "TMDB API", "Zustand", "Tailwind CSS", "React Router", "Express.js", "JWT", "ReCAPTCHA"],
+      "link": "https://movie-app-one-alpha-11.vercel.app/"
     }
 
 
