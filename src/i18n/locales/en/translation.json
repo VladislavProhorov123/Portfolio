@@ -1,11 +1,11 @@
 {
   "available": "Available for work",
   "name": "Vladislav Prokhorov",
-  "intro": "Creating performant interfaces with React and TypeScript.\nFocus on clean code, animations, and user experience.",
-  "text": "I am a Frontend Developer",
+  "intro": "Junior Fullstack Developer with a robust technical foundation in React and Node.js. Experienced in building end-to-end applications using TypeScript, Prisma ORM, and Express.js. Passionate about writing clean, maintainable code and delivering seamless user experiences through modern web technologies",
+  "text": "I am a Junior Fullstack Developer",
   "city": "Odessa",
   "aboutMeTitle": "About Me",
-  "bio": "Hi! I'm Vladislav, a frontend developer. I work with state management and data persistence using {{zustand}}, interact with external APIs, create animations and UI effects with {{framer}}, and improve user interfaces and app interactions. This helps to build more dynamic, responsive, and user-friendly web applications.",
+  "bio": "Hello! I'm Vladyslav, a Junior Fullstack Developer. I build modern web applications using React, TypeScript, Node.js, and Express.js. I work with state management using Zustand, integrate external APIs, design and implement backend functionality, and manage databases with Prisma ORM. I also create animations and interactive UI effects with Framer Motion, focusing on performance, user experience, and clean code. My goal is to develop reliable, scalable, and user-friendly web solutions.",
   "achievementsTitle": "Achievements / Projects",
   "project1Title": "MovieApp",
   "project1Items": [
