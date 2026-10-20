@@ -7,17 +7,14 @@
   "aboutMeTitle": "About Me",
   "bio": "Hello! I'm Vladyslav, a Junior Fullstack Developer. I build modern web applications using React, TypeScript, Node.js, and Express.js. I work with state management using Zustand, integrate external APIs, design and implement backend functionality, and manage databases with Prisma ORM. I also create animations and interactive UI effects with Framer Motion, focusing on performance, user experience, and clean code. My goal is to develop reliable, scalable, and user-friendly web solutions.",
   "achievementsTitle": "Achievements / Projects",
-  "project1Title": "MovieApp",
+  "project1Title": "StarLine Detailing - Real Commercial Project",
   "project1Items": [
-    "Multi-page app (Home, Movies, Actors, Details pages)",
-    "Movie search with debounce and history",
-    "Filtering (genre, year, sorting)",
-    "Trending movies section",
-    "Pagination system",
-    "Movie & actor detail pages (cast, similar, recommendations, trailer)",
-    "Favorites system with Zustand",
-    "Global state management with Zustand",
-    "Data fetching from TMDB API"
+    "Multi-page website with dedicated detailing service pages",
+    "Lead generation form integrated with Telegram",
+    "Google Tag Manager integration",
+    "SEO optimization for every page and Schema.org structured data",
+    "Website prepared for Google Ads campaigns and organic search promotion",
+    "Domain setup, hosting configuration, and website deployment"
   ],
   "techStackTitle": "Tech Stack",
   "core": "Core",
@@ -29,6 +26,37 @@
   "title": "Selected Work",
   "projects": [
     {
+      "title": "StarLine Detailing",
+      "description": "Developed a multi-page website for a real detailing studio, featuring dedicated service pages, a lead generation form integrated with Telegram, SEO optimization, and Google Tag Manager. Prepared for Google Ads campaigns and organic search promotion.",
+      "techStack": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "React Hook Form",
+        "Telegram API",
+        "SEO",
+        "Google Tag Manager"
+      ],
+      "link": "https://starline-detailing.com/"
+    },
+    {
+      "title": "Movie App",
+      "description": "Implemented a movie app using an API, including a landing page, a page with all movies with filtering and search, modals for quick view, and a detailed page for each movie with favorites functionality.",
+      "techStack": [
+        "React",
+        "JavaScript",
+        "TMDB API",
+        "Zustand",
+        "Tailwind CSS",
+        "React Router",
+        "Express.js",
+        "JWT",
+        "ReCAPTCHA"
+      ],
+      "link": "https://movie-app-one-alpha-11.vercel.app/"
+    },
+    {
       "title": "Bouton Akkermar",
       "description": "Implemented 4 pages. Added catalog filtering, separate product pages (bouquets, gifts), and a payment modal. Data is stored in Supabase, and the catalog is rendered from the database. A contact form is included.",
       "techStack": [
@@ -39,27 +67,7 @@
         "React Hook Form"
       ],
       "link": "https://bouton-akkerman.vercel.app/"
-    },
-    {
-      "title": "Perfume Website",
-      "description": "Created a perfume website with an order form where user data automatically goes to Excel, routing across 4 pages, swipers, and product filtering for easy selection.",
-      "techStack": [
-        "React",
-        "React Router",
-        "Tailwind CSS",
-        "Sheetbest",
-        "Swiper.js"
-      ],
-      "link": "https://bbenvenuti.vercel.app/"
-    },
-    {
-      "title": "Movie App",
-      "description": "Implemented a movie app using an API, including a landing page, a page with all movies with filtering and search, modals for quick view, and a detailed page for each movie with favorites functionality.",
-      "techStack": ["React", "JavaScript", "TMDB API", "Zustand", "Tailwind CSS", "React Router", "Express.js", "JWT", "ReCAPTCHA"],
-      "link": "https://movie-app-one-alpha-11.vercel.app/"
     }
-
-
   ],
   "contact": {
     "title": "Ready to build something great?",
